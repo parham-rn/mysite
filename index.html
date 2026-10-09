@@ -1,246 +1,99 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Parham Rajab Nezhad — AI, Machine Learning, Data Analysis and Research.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101828">
+  <meta name="description" content="Parham Rajab Nezhad — portfolio in data analysis, machine learning, and intelligent systems.">
   <title>Parham Rajab Nezhad | Portfolio</title>
-  <style>
-    :root {
-      --bg: #f8fafc;
-      --card: #ffffff;
-      --text: #172033;
-      --muted: #64748b;
-      --accent: #2563eb;
-      --line: #e2e8f0;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-    }
-
-    header {
-      background: #111827;
-      color: white;
-      padding: 64px 24px;
-    }
-
-    .container {
-      max-width: 920px;
-      margin: auto;
-    }
-
-    header p { color: #cbd5e1; }
-
-    h1 {
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      line-height: 1.2;
-      margin: 12px 0;
-    }
-
-    h2 { margin-top: 0; }
-
-    .tag {
-      display: inline-block;
-      border: 1px solid #475569;
-      border-radius: 20px;
-      padding: 4px 12px;
-      font-size: 0.85rem;
-      color: #e2e8f0;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 26px;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    nav a { color: white; }
-    a:hover { text-decoration: underline; }
-
-    main { padding: 32px 24px 60px; }
-
-    section {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 28px;
-      margin-bottom: 22px;
-    }
-
-    .muted { color: var(--muted); }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 16px;
-    }
-
-    .project {
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      padding: 18px;
-    }
-
-    .project h3 { margin-top: 0; }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .skill {
-      background: #eff6ff;
-      color: #1d4ed8;
-      border-radius: 6px;
-      padding: 5px 10px;
-      font-size: 0.9rem;
-    }
-
-    footer {
-      text-align: center;
-      color: var(--muted);
-      padding: 24px;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/script.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <span class="tag">AI · Machine Learning · Data</span>
-      <h1>Parham Rajab Nezhad</h1>
-      <p>
-        Computer Science graduate focused on machine learning,
-        data-driven modeling, and intelligent systems.
-      </p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#research">Research</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Parham Rajab Nezhad home"><span class="brand-mark">P</span><span>Parham Rajab Nezhad</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a><a href="projects.html">Projects</a><a href="certificates.html">Certificates</a>
+        <a class="nav-contact" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I hold an MSc in Computer Science with a specialization in
-        Artificial Intelligence. My interests include machine learning,
-        data analysis, sequential modeling, graph-based learning,
-        and AI applications in real-world systems.
-      </p>
-      <p>
-        I enjoy solving practical problems, exploring data, and
-        continuously developing my technical skills.
-      </p>
-      <p><a href="#contact">Get in touch →</a></p>
+  <main id="main">
+    <section class="hero section-dark">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> PORTFOLIO · RESEARCH · PROJECTS</p>
+          <h1>Data, intelligence,<br><span class="gradient-text">and practical impact.</span></h1>
+          <p class="hero-lead">I’m Parham Rajab Nezhad, a Computer Science graduate interested in data analysis, machine learning, and building data-driven solutions to real-world problems.</p>
+          <div class="hero-actions"><a class="button button-primary" href="projects.html">Explore projects <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="#contact">Get in touch</a></div>
+          <div class="hero-links"><a href="https://github.com/parham-rn" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/parham-rajabnezhad/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://scholar.google.com/citations?user=SFBQKzkAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a></div>
+        </div>
+        <div class="hero-art" aria-label="Illustration representing connected data and machine learning" role="img">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="art-node node-a">SQL</div><div class="art-node node-b">AI</div><div class="art-node node-c">BI</div><div class="art-node node-d">ML</div>
+          <div class="art-core"><span class="core-symbol">⌘</span><strong>DATA</strong><small>to insight</small></div>
+          <div class="art-line line-a"></div><div class="art-line line-b"></div><div class="art-line line-c"></div><div class="art-line line-d"></div>
+        </div>
+      </div>
+      <div class="hero-bottom-line"></div>
     </section>
 
-    <section id="projects">
-      <h2>Selected Projects</h2>
-      <div class="projects">
-        <article class="project">
-          <h3>Cyber-Attack Chain Risk Analysis</h3>
-          <p>
-            Research on sequential attack-chain modeling and risk
-            prediction using LSTM and MITRE ATT&CK representations.
-          </p>
-          <p class="muted">Machine Learning · Cybersecurity · Python</p>
-          <a href="#research">View research details →</a>
-        </article>
-
-        <article class="project">
-          <h3>Intelligent Traffic Management</h3>
-          <p>
-            A project exploring graph neural networks for traffic-flow
-            analysis across connected intersections using camera data.
-          </p>
-          <p class="muted">Graph Neural Networks · AI · Traffic Data</p>
-          <a href="#contact">Project information →</a>
-        </article>
-
-        <article class="project">
-          <h3>Data Analysis Portfolio</h3>
-          <p>
-            Practical projects in SQL, Python, dashboards, data
-            visualization, and extracting insights from data.
-          </p>
-          <p class="muted">SQL · Python · Power BI</p>
-          <span class="muted">Projects coming soon</span>
-        </article>
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div><p class="eyebrow eyebrow-blue">ABOUT ME</p><h2>Curious by nature.<br>Analytical by practice.</h2></div>
+        <div class="about-copy"><p>I have a background in applied mathematics and computer science, with experience spanning machine learning research, graph-based modeling, and intelligent systems.</p><p>My current portfolio focus is practical data analysis—using SQL, Python, and BI tools to turn raw data into clear findings—while continuing to build on my AI and research experience.</p><a class="text-link" href="projects.html">See what I’m building <span aria-hidden="true">→</span></a></div>
       </div>
     </section>
 
-    <section id="research">
-      <h2>Research & Publications</h2>
-      <h3>
-        Categorization and Risk Assessment of Cyber-Attack Chains:
-        Sub-Chain Approach Using LSTM for Predictive Modeling
-      </h3>
-      <p>
-        Research on modeling attack sequences and predicting risk
-        scores using machine learning.
-      </p>
-      <p class="muted">
-        Add the publication DOI or paper link here.
-      </p>
-    </section>
-
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <div class="skills">
-        <span class="skill">Python</span>
-        <span class="skill">SQL</span>
-        <span class="skill">Machine Learning</span>
-        <span class="skill">Data Analysis</span>
-        <span class="skill">Graph Neural Networks</span>
-        <span class="skill">Time-Series Modeling</span>
-        <span class="skill">Power BI</span>
-        <span class="skill">MITRE ATT&CK</span>
+    <section class="section section-muted" id="skills">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow eyebrow-blue">TOOLKIT</p><h2>Skills I work with</h2></div><p class="section-intro">A mix of analytical, engineering, and research tools. This list can be updated as new projects are published.</p></div>
+        <div class="skill-groups">
+          <article class="skill-card"><div class="skill-icon">▤</div><h3>Data & BI</h3><p>SQL · Python · Power BI · Tableau · Data visualization · Exploratory analysis</p></article>
+          <article class="skill-card"><div class="skill-icon">✳</div><h3>AI & Machine Learning</h3><p>Scikit-learn · TensorFlow · PyTorch · LSTM · Graph Neural Networks</p></article>
+          <article class="skill-card"><div class="skill-icon">⌘</div><h3>Graphs & Research</h3><p>NetworkX · Neo4j · Graph analysis · Sequential modeling · Research writing</p></article>
+          <article class="skill-card"><div class="skill-icon">{ }</div><h3>Development</h3><p>Python · C++ · C# · Git/GitHub · OpenCV</p></article>
+        </div>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        I am open to research collaborations, data-related
-        opportunities, and AI projects.
-      </p>
-      <p>
-        LinkedIn: <a href="https://www.linkedin.com/in/parham-rajabnezhad/">
-          My LinkedIn profile
-        </a>
-      </p>
-      <p>
-        GitHub: <a href="https://github.com/parham-rn">
-          github.com/parham-rn
-        </a>
-      </p>
-      <p class="muted">
-        Add your professional email and CV download link here.
-      </p>
+    <section class="section" id="featured-projects">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow eyebrow-blue">SELECTED WORK</p><h2>Projects with a purpose</h2></div><a class="text-link" href="projects.html">All projects <span aria-hidden="true">→</span></a></div>
+        <div class="project-grid">
+          <article class="project-card"><div class="project-visual visual-data"><span class="visual-label">DATA ANALYSIS</span><div class="mini-chart"><i style="height:35%"></i><i style="height:68%"></i><i style="height:48%"></i><i style="height:86%"></i><i style="height:60%"></i><i style="height:95%"></i></div><div class="visual-caption">From raw data to decisions</div></div><div class="project-content"><p class="project-type">01 / DATA & BI</p><h3>Data Analysis Portfolio</h3><p>A growing collection of SQL exercises, data-cleaning workflows, analysis notebooks, and dashboard projects.</p><div class="tag-list"><span>SQL</span><span>Python</span><span>Power BI</span></div><a class="text-link" href="projects.html#data-analysis">Explore category →</a></div></article>
+          <article class="project-card"><div class="project-visual visual-traffic"><span class="visual-label">INTELLIGENT SYSTEMS</span><div class="road road-one"></div><div class="road road-two"></div><span class="traffic-point point-one"></span><span class="traffic-point point-two"></span><span class="traffic-point point-three"></span><span class="traffic-point point-four"></span><div class="visual-caption">Graph-based traffic modeling</div></div><div class="project-content"><p class="project-type">02 / AI & ML</p><h3>Intelligent Traffic Management</h3><p>A project exploring graph neural networks to model traffic flow across connected intersections using camera data.</p><div class="tag-list"><span>GNN</span><span>Python</span><span>Computer Vision</span></div><a class="text-link" href="projects.html#ai-ml">Explore project →</a></div></article>
+          <article class="project-card"><div class="project-visual visual-graph"><span class="visual-label">RESEARCH</span><svg viewBox="0 0 360 170" aria-hidden="true"><g stroke="#8fb7ff" stroke-width="1.5" opacity=".75"><path d="M45 84 L105 35 L174 70 L236 27 L310 65 M45 84 L100 135 L174 70 L245 125 L310 65 M105 35 L100 135 M236 27 L245 125" fill="none"/></g><g fill="#c6ddff" stroke="#fff" stroke-width="1.5"><circle cx="45" cy="84" r="8"/><circle cx="105" cy="35" r="7"/><circle cx="174" cy="70" r="10"/><circle cx="236" cy="27" r="7"/><circle cx="310" cy="65" r="9"/><circle cx="100" cy="135" r="7"/><circle cx="245" cy="125" r="8"/></g></svg><div class="visual-caption">Sequence and graph analysis</div></div><div class="project-content"><p class="project-type">03 / RESEARCH</p><h3>Cyber-Attack Chain Risk Analysis</h3><p>Research on sequential attack-chain categorization and risk prediction using LSTM models and MITRE ATT&CK.</p><div class="tag-list"><span>LSTM</span><span>MITRE ATT&CK</span><span>Risk Modeling</span></div><a class="text-link" href="https://doi.org/10.1007/s11416-026-00647-8" target="_blank" rel="noopener noreferrer">Read publication →</a></div></article>
+        </div>
+      </div>
     </section>
+
+    <section class="section section-muted" id="journey">
+      <div class="container timeline-layout">
+        <div class="timeline-intro"><p class="eyebrow eyebrow-blue">THE JOURNEY</p><h2>Learning, building,<br>and moving forward.</h2><p>A selected timeline of education, professional work, and research. Edit these entries to reflect your exact milestones and dates.</p><a class="text-link" href="certificates.html">Explore certificates →</a></div>
+        <div class="timeline">
+          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-date">2026</p><h3>Research publication & data analytics upskilling</h3><p>Published research on cyber-attack chain risk assessment and continued developing practical skills in SQL and Power BI.</p></article>
+          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-date">2025</p><h3>Research and professional development</h3><p><em>Replace this text with your confirmed projects, courses, work, or other milestones from 2025.</em></p></article>
+          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-date">2023–2024</p><h3>Intelligent Traffic Management</h3><p>Led a project exploring graph neural networks for traffic flow across connected intersections.</p></article>
+          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-date">2022–2023</p><h3>Research Fellow — LinkCar</h3><p>Worked on research relating to cybersecurity challenges in connected and intelligent vehicles.</p></article>
+          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-date">2019–2023</p><h3>M.Sc. in Computer Science (AI)</h3><p>Completed graduate studies and research on machine learning for cyber-attack-chain risk analysis.</p></article>
+          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-date">2014–2019</p><h3>B.Sc. in Applied Mathematics</h3><p>Built a quantitative foundation and completed a final project on data mining in the Tehran Stock Exchange.</p></article>
+          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-date">2014–2016</p><h3>C++ Developer — Omid Robotics Team</h3><p>Contributed C++ control and navigation modules for autonomous robots.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="container publication-card"><div class="publication-icon">↗</div><div class="publication-copy"><p class="eyebrow eyebrow-blue">RESEARCH & PUBLICATIONS</p><h2>Categorization and Risk Assessment of Cyber-Attack Chains: Sub-Chain Approach Using LSTM for Predictive Modeling</h2><p>Published in <em>Journal of Computer Virology and Hacking Techniques</em> (2026). Research on representing attack sequences and predicting risk using an LSTM-based approach.</p><a class="text-link" href="https://doi.org/10.1007/s11416-026-00647-8" target="_blank" rel="noopener noreferrer">View article and DOI →</a></div></div>
+    </section>
+
+    <section class="contact-section section-dark" id="contact"><div class="container contact-inner"><div><p class="eyebrow">LET’S CONNECT</p><h2>Have a project or opportunity in mind?</h2><p>I’m interested in data analytics, AI-driven applications, and opportunities to keep learning through practical work.</p></div><div class="contact-actions"><a class="button button-primary" href="mailto:parham.rajabnezhad@gmail.com">Email me ↗</a><a class="button button-ghost" href="https://www.linkedin.com/in/parham-rajabnezhad/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a></div></div></section>
   </main>
 
-  <footer>
-    © 2026 Parham Rajab Nezhad · Personal Portfolio
-  </footer>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark">P</span><span>Parham Rajab Nezhad</span></a><p>Built with HTML & CSS · <span id="current-year">2026</span></p><div class="footer-links"><a href="https://github.com/parham-rn" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://orcid.org/0009-0006-7066-5712" target="_blank" rel="noopener noreferrer">ORCID</a></div></div></footer>
 </body>
 </html>
